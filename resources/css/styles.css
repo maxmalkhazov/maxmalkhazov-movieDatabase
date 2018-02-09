@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	color: white;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-0.3.5&s=3921e69007e45be40b5b940240713e9d&auto=format&fit=crop&w=1500&q=80");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.searchbox {
+	text-align: center;
+    margin: 3rem auto 2rem auto; 
+}
+
+.search-btn {
+	width: 5rem;
+	background-color: #FF0000;
+	border: 0;
+	outline: 0;
+	color: white;
+	padding: .4rem .75rem;
+	cursor: pointer;
+}
+
+.search-btn:hover,
+.search-btn:active {
+	background-color: #a00;
+	outline: 0;
+}
+
+.search-field {
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	color: white;
+	margin-right: 1rem;
+	width: 20rem;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.main--info {
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #fff;
+	box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, .8);
+}
+
+.main--poster {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.poster {
+	height: 100%;
+	width: 100%;
+}
+
+.additional--info {
+	padding: 1rem;
+	margin-left: 0;
+}
+
+.main--title {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: .4rem;
+}
+
+.main--rating {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: right;
+}
+
+.main--tagline {
+	color: #FF0000;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.tagline {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.main--overview {
+	text-align: center;
+}
+
+.overview {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main--runtime {
+	font-size: 1.3rem;
+	font-weight: 300;
+	text-align: right;
+}
