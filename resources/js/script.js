@@ -21,6 +21,16 @@ searchBtn.addEventListener("click", function() {
 	.then(data => fetchURL(data));
 });
 
+document.querySelector(".search-field").addEventListener('keypress', function(e) {
+	if (e.which === 13) {
+		let searchField = document.querySelector(".search-field").value;
+		let url = "https://api.themoviedb.org/3/search/movie?api_key=b99c241766327cb2935458f26027398d&query=" + searchField;
+		document.querySelector(".search-field").value = "";
+		fetch(url).then(response => response.json())
+		.then(data => fetchURL(data));
+	}
+});
+
 const init = () => {
 	fetch("https://api.themoviedb.org/3/movie/157336?api_key=b99c241766327cb2935458f26027398d")
 	.then(response => response.json())
